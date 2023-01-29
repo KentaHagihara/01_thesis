@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.11.3)  29 JAN 2023 17:11
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.11.3)  29 JAN 2023 22:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -123,7 +123,54 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 34.
  [1
 
-] [2]
+]
+! Missing } inserted.
+<inserted text> 
+                }
+l.60     \braket{$rho$}
+                        = \frac{A}{V} = \frac{A}{r_0^{3}A}
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.60     \braket{$rho$}
+                        = \frac{A}{V} = \frac{A}{r_0^{3}A}
+? 
+! Display math should end with $$.
+<to be read again> 
+                   r
+l.60     \braket{$rho$}
+                        = \frac{A}{V} = \frac{A}{r_0^{3}A}
+? 
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.60     \braket{$rho$}
+                        = \frac{A}{V} = \frac{A}{r_0^{3}A}
+? 
+! Extra }, or forgotten $.
+\braket #1->\mathinner {\langle {#1}\rangle }
+                                             
+l.60     \braket{$rho$}
+                        = \frac{A}{V} = \frac{A}{r_0^{3}A}
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \]
+       
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.64 
+     
+? 
+[2]
 File: ../変形図.png Graphic file (type bmp)
 <../変形図.png>
  [3]
@@ -131,22 +178,22 @@ File: ../SLY4_ON.eps Graphic file (type eps)
 <../SLY4_ON.eps>
 File: ../SLY4_OFF.eps Graphic file (type eps)
 <../SLY4_OFF.eps>
- [4]
+ [4] [5]
 Overfull \vbox (26.55661pt too high) has occurred while \output is active []
 
 
-[5]
+[6]
 File: ../multi_SLY4_beta_radius_Z=50.eps Graphic file (type eps)
 <../multi_SLY4_beta_radius_Z=50.eps>
 File: ../multi_SLY4_beta_radius_Z=90.eps Graphic file (type eps)
 <../multi_SLY4_beta_radius_Z=90.eps>
- [6]
+ [7]
 File: ../SLY4_Z=50_N=116_densityN.eps Graphic file (type eps)
 <../SLY4_Z=50_N=116_densityN.eps>
- [7]
+ [8]
 File: ../SLY4_Z=50_N=116_speN.eps Graphic file (type eps)
 <../SLY4_Z=50_N=116_speN.eps>
- [8]
+ [9]
 File: ../Z=52_N=54_energy_beta.pdf Graphic file (type pdf)
 <../Z=52_N=54_energy_beta.pdf>
 File: ../Z=52_N=56_energy_beta.pdf Graphic file (type pdf)
@@ -155,7 +202,7 @@ File: ../Z=46_N=48_energy_beta.pdf Graphic file (type pdf)
 <../Z=46_N=48_energy_beta.pdf>
 File: ../Z=48_N=48_energy_beta.pdf Graphic file (type pdf)
 <../Z=48_N=48_energy_beta.pdf>
- [9]
+ [10]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -165,7 +212,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11] [12] (./result.aux)
+[11] [12] [13] (./result.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -179,4 +226,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  55i,6n,62p,227b,300s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on result.dvi (12 pages, 24656 bytes).
+Output written on result.dvi (13 pages, 25624 bytes).
