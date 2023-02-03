@@ -1,0 +1,121 @@
+\documentclass[12pt]{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{braket}
+\usepackage{here}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\title{原子核の変形と中性子ドリップラインに対するクーロン相互作用の効果}
+\author{萩原健太}
+\date{2023年1月21日}
+\begin{document}
+
+\begin{center}
+    {\Large
+        原子核の変形と中性子ドリップラインに対するクーロン相互作用の効果
+    }
+\end{center}
+\vspace{1em}
+\begin{flushright}
+  201910867 萩原健太
+
+  指導教員：中務孝
+\end{flushright}
+
+
+\section{方法}
+%本研究では原子核の変形と対相関を自己無撞着に決定することのできる計算プログラムであるHFBTHOを用い、陽子数$Z=2-120$の束縛する偶偶核を対象に数値計算を実行した。
+%本研究では化学ポテンシャルを$\lambda_n=\frac{dE}{dN},\lambda_p=\frac{dE}{dZ}$のように設定し、陽子と中性子の化学ポテンシャルが負であることを束縛条件として原子核の存在限界を決定した。
+%
+エネルギー密度を定義することで他の様々な物理量を計算することのできる密度汎関数理論を用いることで、量子多体系である原子核の性質を探ることが出来る。
+本研究ではHFB方程式 (Hartree-Fock-Bogoliubov equation)を解くことのできるHFBTHOプログラムを用いて原子核の様々な性質について調査を行った。
+\subsection{HFB方程式}
+2体のフェルミ粒子から成る量子系のハミルトニアンは生成・消滅演算子の組み合わせにより次のように表すことが出来る。
+\begin{equation}
+    H = \sum_{n_1 n_2} e_{n_1 n_2}c_{n_1}^\dagger c_{n_2} + \frac{1}{4} \sum_{n_1 n_2 n_3 n_4}\bar{v}_{n_1 n_2 n_3 n_4}c_{n_1}^\dagger c_{n_2}^\dagger c_{n_4}^\dagger c_{n_3},
+\end{equation}
+ここで$\bar{v}_{n_1 n_2 n_3 n_4}$は反対称性を持つ2体の相互作用の行列要素である。
+HFB法で用いる基底状態の波動関数$\ket{\Phi}$は、準粒子の真空と準粒子の演算子によって$\alpha_k\ket{\psi} = 0$のように定義される。
+ここで準粒子の演算子は元の演算子に対して次のようなBogoliubov変換を行うことで定義される。
+\begin{equation}
+    \alpha_k = \sum_n(U_{nk}^*c_n + V_{nk}^* c_n^\dagger ), \alpha_k^\dagger  = \sum_n(V_{nk}c_n + U_{nk} c_n^\dagger )
+\end{equation}
+この変換は次のように書き直すことが出来る。
+\begin{equation}
+    \left(\begin{array}{c}
+            \alpha \\
+            \alpha^\dagger
+        \end{array}
+    \right) =
+    \begin{pmatrix}
+        U^\dagger& V^\dagger\\
+        V^T & U^T
+    \end{pmatrix}
+    \left(\begin{array}{c}
+            c \\
+            c^\dagger
+        \end{array}
+    \right)
+\end{equation}
+行列Uと行列Vは以下のような関係を満たしている。
+\begin{equation}
+    U^\dagger U + V^\dagger V = I, UU^\dagger  + V^*V^T = I, U^{T}V + V^{T}U = 0, UV^\dagger  + V^*U^T = 0. 
+\end{equation}
+続いて一体の密度行列$\rho$や$\kappa$を次のように定義すると
+\begin{equation}
+    \label{rho-kappa}
+    \rho_{nn'} = \mel{\Phi}{c_n'^\dagger c_n}{\Phi} = (V^*V^T)_{nn'}, \kappa_{nn'} = \mel{\Phi}{c_n'c_n}{\Phi} = (V^*U^T)_{nn'}
+\end{equation}
+ハミルトニアンの期待値を以下のように密度の汎関数として書き換えることが出来る。
+\begin{equation}
+    \label{func-energy}
+    E[\rho,\kappa] = \frac{\mel{\Phi}{H}{\Phi}}{\braket{\Phi}{\Phi}} = Tr[(e + \frac{1}{2}\Gamma)\rho] - \frac{1}{2}Tr[\Delta\kappa^*]
+\end{equation}
+ただしここで$\Gamma$と$\Delta$は次のように定義した。
+\begin{equation}
+    \label{Gamma-Delta}
+    \Gamma_{n_1 n_3} = \sum_{n_2 n_4}\bar{v}_{n_1 n_2 n_3 n_4}\rho_{n_4 n_2}, \Delta_{n_1 n_2} = \frac{1}{2}\sum_{n3 n_4}\bar{v}_{n_1 n_2 n_3 n_4}\kappa_{n_3 n_4}
+\end{equation}
+ここで式\ref{func-energy}の変分を取ることで最終的に、次の形をしたHFB方程式を得る。
+\begin{equation}
+    \label{HFBequation}
+    \begin{pmatrix}
+        e + \Gamma - \lambda & \Delta \\
+        - \Delta^* & - (e + \Gamma)^* + \lambda
+    \end{pmatrix}
+    \left(
+        \begin{array}{c}
+            U \\
+            V
+        \end{array}
+    \right) =
+    E
+    \left(
+        \begin{array}{c}
+            U \\
+            V
+        \end{array}
+    \right)
+\end{equation}
+式\ref{HFBequation}での$\lambda$はラグランジュの未定乗数であり、正しい粒子数を補正するために導入されている。
+本研究ではこの化学ポテンシャルを陽子と中性子それぞれにおいて$\lambda_p=\frac{dE}{dZ}, \lambda_n=\frac{dE}{dN}$のように設定し、これらが負であることを束縛条件として原子核の存在限界を決定した。
+HFBTHOプログラムでは式\ref{rho-kappa}から式\ref{HFBequation}を、$n$回目の試行で得られた式\ref{HFBequation}の固有値$E$と
+$n+1$回目の試行で得られた式\ref{HFBequation}の固有値$E$が限りなく同じ値になるまで繰り返し解く。
+最後の試行で得られた密度行列$\rho$やペアリング行列$\kappa$を用いて様々な物理量を定義し、原子核の性質を詳しく調べた。
+
+\subsection{四重極モーメント}
+\begin{equation}
+    \label{quadrupole-moment-func}
+    \hat{Q}_{20}(r,\theta,\phi) = r^2 \sqrt{\frac{5\pi}{4}} P_2(\cos{\theta})
+\end{equation}
+$P_2$は2次のラグランジュ多項式である。
+
+\subsection{変形度$\beta$}
+四重極モーメントと対応して原子核の変形度を表すことが出来る指標に変形度がある。
+本研究では$\beta$と表記する。定義は次のとおりである。
+\begin{equation}
+    \label{beta-func}
+    \hat{Q} = \sqrt{\frac{5}{\pi}}\ev*{r^2}\hat{\beta}
+\end{equation}
+\end{document}

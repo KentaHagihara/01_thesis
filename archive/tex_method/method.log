@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.11.3)  31 JAN 2023 22:15
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.11.3)  31 JAN 2023 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**result.tex
-(./result.tex
+**method.tex
+(./method.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2022-11-01>)
 L3 programming layer <2022-10-26>
 (c:/texlive/2022/texmf-dist/tex/platex/base/jarticle.cls
@@ -174,8 +174,8 @@ File: l3backend-dvips.def 2022-10-26 L3 backend support: dvips
 ))
 Package: xparse 2022-06-22 L3 Experimental document command parser
 ))
-(./result.aux)
-\openout1 = `result.aux'.
+No file method.aux.
+\openout1 = `method.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -200,66 +200,60 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
- (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-File: ../bindingE.png Graphic file (type bmp)
-<../bindingE.png>
- [1
+) [1
 
-] [2]
-File: ../変形図.png Graphic file (type bmp)
-<../変形図.png>
- [3]
-File: ../quadrupole_moment_nakatsukasa-san.png Graphic file (type bmp)
-<../quadrupole_moment_nakatsukasa-san.png>
- [4]
-[5] [6]
-File: ../SLY4_ON.eps Graphic file (type eps)
-<../SLY4_ON.eps>
-File: ../SLY4_OFF.eps Graphic file (type eps)
-<../SLY4_OFF.eps>
- [7] [8] [9]
-File: ../Z=52_N=54_energy_beta.pdf Graphic file (type pdf)
-<../Z=52_N=54_energy_beta.pdf>
-File: ../Z=46_N=48_energy_beta.pdf Graphic file (type pdf)
-<../Z=46_N=48_energy_beta.pdf>
-File: ../ドリップラインの変化.png Graphic file (type bmp)
-<../ドリップラインの変化.png>
- [10] [11]
-File: ../Z=50_N=116_speN.pdf Graphic file (type pdf)
-<../Z=50_N=116_speN.pdf>
- [12]
-File: ../Z=50_N=120_speN.pdf Graphic file (type pdf)
-<../Z=50_N=120_speN.pdf>
- [13] [14]
+]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 376.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 80.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 376.
-LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
-(Font)              No change on input line 387.
-LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
-(Font)              No change on input line 391.
- [15] (./result.aux) ) 
-Here is how much of TeX's memory you used:
- 3271 strings out of 475434
- 46867 string characters out of 5791500
- 405115 words of memory out of 5000000
- 24950 multiletter control sequences out of 15000+600000
- 487351 words of font info for 99 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 72i,7n,77p,384b,297s stack positions out of 10000i,1000n,20000p,200000b,200000s
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 80.
 
-Output written on result.dvi (15 pages, 39648 bytes).
+
+LaTeX Warning: Reference `func-energy' on page 2 undefined on input line 80.
+
+
+LaTeX Warning: Reference `HFBequation' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `rho-kappa' on page 2 undefined on input line 103.
+
+
+LaTeX Warning: Reference `HFBequation' on page 2 undefined on input line 103.
+
+
+LaTeX Warning: Reference `HFBequation' on page 2 undefined on input line 103.
+
+
+LaTeX Warning: Reference `HFBequation' on page 2 undefined on input line 104.
+
+[2] [3] (./method.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3173 strings out of 475434
+ 44969 string characters out of 5791500
+ 404115 words of memory out of 5000000
+ 24881 multiletter control sequences out of 15000+600000
+ 483994 words of font info for 88 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 72i,7n,77p,384b,185s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on method.dvi (3 pages, 8744 bytes).

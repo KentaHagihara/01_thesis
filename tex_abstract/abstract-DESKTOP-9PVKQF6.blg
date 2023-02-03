@@ -1,11 +1,12 @@
 This is pBibTeX, Version 0.99d-j0.34 (utf8.euc) (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: result.aux
-I found no \bibdata command---while reading file result.aux
-I found no \bibstyle command---while reading file result.aux
-You've used 2 entries,
+The top-level auxiliary file: abstract.aux
+I found no \citation commands---while reading file abstract.aux
+I found no \bibdata command---while reading file abstract.aux
+I found no \bibstyle command---while reading file abstract.aux
+You've used 0 entries,
             0 wiz_defined-function locations,
-            87 strings with 536 characters,
+            84 strings with 503 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
@@ -45,4 +46,4 @@ while$ -- 0
 width$ -- 0
 write$ -- 0
 is.kanji.str$ -- 0
-(There were 2 error messages)
+(There were 3 error messages)
